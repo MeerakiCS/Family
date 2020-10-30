@@ -1,0 +1,16 @@
+﻿@model IEnumerable<FamilyTask.DataAccess.Data.Entities.Member>
+<div class="col-10 offset-1 pt-5">
+    <div class="row m-0">
+        <Field class="col-9 p-0 custom-input">
+            <input type="text" class="form-control" placeholder="Enter New Task" id="task_description" />
+        </Field>
+        <div class="col-3 p-0 text-right">
+            <input type="button" class="btn btn-primary" value="Add Task" onclick="addTask()"/>
+        </div>
+    </div>
+</div>
+<div class="col-10 offset-1">
+    <div class="task-wrapper">
+            <div id="task-list"></div>
+        </div>
+    </div>

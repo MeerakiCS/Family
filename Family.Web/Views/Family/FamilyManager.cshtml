@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FamilyTask.DataAccess.Data.Entities.Member>
+@{
+    ViewData["Title"] = "Family";
+}
+
+<div class="page-wrapper row m-0 col-12 p-0">
+    <div class="col-4 p-0">
+        @Html.Partial("Member/_MembersPartial", Model)
+    </div>
+    <div id="task_View" class="col-8 p-0">
+        @Html.Partial("Task/_TasksPartial", Model)
+    </div>
+    <div id="addmember_View" style="display:none;" class="col-8 p-0">
+        @Html.Partial("Member/_AddMemberPartial", Model)
+    </div>
+</div>
+
+
+@section scripts
+    {
+    <link href="~/css/custom/Member/member.css" rel="stylesheet" />
+    <link href="~/css/custom/Task/tasks.css" rel="stylesheet" />
+    <script src="~/js/Member/ManageMembers.js"></script>
+    <script src="~/js/Task/ManageTasks.js"></script>
+}

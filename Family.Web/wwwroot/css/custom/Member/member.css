@@ -1,0 +1,60 @@
+﻿.create-wrapper .header {
+    color: #000000;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Poppins SemiBold";
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.create-wrapper label {
+    color: #000000;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Poppins Light";
+}
+.avtar-border {
+    border: 2px solid black;
+}
+
+.scroll {
+    margin-bottom: 10px;
+    max-height: 370px !important;
+    overflow-y: scroll;
+}
+.create-wrapper .avtar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@media(max-width: 1400px) {
+    .create-wrapper .header {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .create-wrapper label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .create-wrapper .avtar {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .create-wrapper .header {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .create-wrapper .avtar {
+        width: 16px;
+        height: 16px;
+    }
+}
